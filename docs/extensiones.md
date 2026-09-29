@@ -36,8 +36,7 @@ para pegar en un informe o un correo.
 ## Consola Python
 
 **Extensiones ▸ Consola Python** (o `Ctrl+Shift+P`) abre una consola de
-programación **en vivo sobre el modelo abierto** — el equivalente de la Ruby
-Console de SketchUp. Es la herramienta para usuarios avanzados: inspeccionar el
+programación **en vivo sobre el modelo abierto**. Es la herramienta para usuarios avanzados: inspeccionar el
 modelo, generar geometría por código, automatizar tareas repetitivas.
 
 Lo importante, aunque nunca escribas código:
@@ -100,7 +99,7 @@ para reportárselo al autor. Para desinstalar, borra el archivo.
 !!! warning "Instala solo extensiones de confianza"
     Un plugin ejecuta código con los mismos permisos que IngeTrazo: puede leer
     y escribir tus archivos. Es el mismo trato de confianza que las
-    extensiones de SketchUp o Blender — instala solo lo que venga de una
+    extensiones de Blender o de cualquier programa — instala solo lo que venga de una
     fuente que conozcas.
 
 ## Escribir tu propia extensión

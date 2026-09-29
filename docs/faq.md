@@ -12,9 +12,9 @@ Sí — todo el modelador, el BIM y el compositor de láminas funcionan **offlin
 
 Sí, de dos formas: el **Asistente IA** integrado (chat en español con la clave del proveedor que prefieras; Groq tiene cuota gratis, y Ollama corre en tu propia máquina) y el **puente MCP** para que cualquier agente con MCP (Claude Code, Claude Desktop, Cursor, VS Code, Gemini CLI…) dibuje en la app abierta. En los dos casos la IA genera recetas que el motor ejecuta, cada paso se deshace y el modelo queda editable a mano. Ver [Modelar con la IA](ia.md).
 
-## ¿Puedo abrir mis `.skp` de SketchUp? ¿Y guardar?
+## ¿Puedo abrir mis archivos `.skp`?
 
-Sí, directamente y **sin conversores**: el importador nativo lee archivos de todas las versiones de SketchUp con geometría, grupos, componentes, materiales, texturas, capas, escenas y cotas. Y **exporta `.skp`** que SketchUp abre, muestra con las texturas en su sitio y guarda. Ver [Importar y exportar](importar-exportar.md).
+Sí, directamente y **sin conversores**: el importador nativo lee `.skp` de todas las versiones del formato con geometría, grupos, componentes, materiales, texturas, capas, escenas y cotas. IngeTrazo no escribe `.skp`: tu trabajo se guarda en `.igz` y se comparte en formatos abiertos (IFC, DAE, OBJ, glTF, STL, DXF). Ver [Importar y exportar](importar-exportar.md).
 
 ## ¿Mis archivos quedan atrapados en un formato propietario?
 

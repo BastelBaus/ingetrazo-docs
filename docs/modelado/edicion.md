@@ -22,7 +22,7 @@
 | Clic | Selecciona lo que tocas. Doble clic sobre una cara toma la cara y sus aristas; triple clic, todo lo conectado. |
 | Arrastre izquierda → derecha | **Ventana**: solo lo que queda dentro del cuadro. |
 | Arrastre derecha → izquierda | **Cruce**: todo lo que el cuadro toca. |
-| `Mayús` + clic | **Alterna**: lo que estaba seleccionado sale, lo que no estaba entra. La regla de SketchUp — es la forma de quitar una arista o una cara de una selección grande. |
+| `Mayús` + clic | **Alterna**: lo que estaba seleccionado sale, lo que no estaba entra. Es la forma de quitar una arista o una cara de una selección grande. |
 | `Ctrl` + clic | **Añade** siempre. |
 | `Mayús` + `Ctrl` + clic | **Quita** siempre. |
 | Clic en el vacío | Vacía la selección; con un modificador, la deja como está. |
@@ -35,9 +35,9 @@ La caja de selección usa los mismos modificadores, y toma también grupos, comp
 | Herramienta | Atajo | Notas |
 |---|---|---|
 | **Mover** | `M` | Selecciona y arrastra; teclea la distancia (o `X;Y;Z` para un desplazamiento en tres ejes). Mueve puntos, aristas, caras, grupos o selecciones mixtas. Las flechas del teclado bloquean un eje; `Ctrl` mueve una **copia**. Se imanta a los tres ejes desde cualquier vista (X, Y y Z, con su color) y contra caras de otros objetos. |
-| **Rotar** | `Q` | Como el transportador de SketchUp: el disco se colorea según el plano que infiere del hover; las **flechas** o `Mayús` fijan el plano; clic en el pivote, clic en la referencia, arrastra el ángulo o tecléalo. Marcas cada 15° con imantación. `Ctrl` gira una **copia**; arrastrar desde el centro define un eje de plegado. Acepta pendientes `3:12`. |
-| **Escalar** | `S` | El cajón amarillo de SketchUp con sus manijas: **esquina** = escala uniforme, **arista** = dos ejes, **cara** = un eje. El ancla es el lado opuesto; con `Ctrl` escalas desde el **centro**; `Mayús` fuerza uniforme. En el VCB: un factor (`2`), factores por eje (`1;2;1`), un tamaño absoluto con unidad (`3m`, `2'`) o un factor **negativo para espejar**. Se puede re-teclear después de soltar. Sirve sobre geometría suelta, grupos, componentes e imágenes a la vez. |
-| **Voltear** | — | Herramientas ▸ Voltear (la herramienta Flip de SketchUp): tres planos translúcidos rojo, verde y azul sobre la selección; clic en uno la espeja por ese plano. `Ctrl` voltea una **copia**. También en el menú contextual. |
+| **Rotar** | `Q` | Un transportador: el disco se colorea según el plano que infiere del hover; las **flechas** o `Mayús` fijan el plano; clic en el pivote, clic en la referencia, arrastra el ángulo o tecléalo. Marcas cada 15° con imantación. `Ctrl` gira una **copia**; arrastrar desde el centro define un eje de plegado. Acepta pendientes `3:12`. |
+| **Escalar** | `S` | Un cajón amarillo con manijas: **esquina** = escala uniforme, **arista** = dos ejes, **cara** = un eje. El ancla es el lado opuesto; con `Ctrl` escalas desde el **centro**; `Mayús` fuerza uniforme. En el VCB: un factor (`2`), factores por eje (`1;2;1`), un tamaño absoluto con unidad (`3m`, `2'`) o un factor **negativo para espejar**. Se puede re-teclear después de soltar. Sirve sobre geometría suelta, grupos, componentes e imágenes a la vez. |
+| **Voltear** | — | Herramientas ▸ Voltear: tres planos translúcidos rojo, verde y azul sobre la selección; clic en uno la espeja por ese plano. `Ctrl` voltea una **copia**. También en el menú contextual. |
 
 ## Borrador, medir y comprobar
 
@@ -50,7 +50,7 @@ La caja de selección usa los mismos modificadores, y toma también grupos, comp
 
 ## Dividir
 
-Clic derecho sobre una línea o un arco ▸ **Dividir…** y el número de segmentos (el Divide de SketchUp):
+Clic derecho sobre una línea o un arco ▸ **Dividir…** y el número de segmentos:
 
 - Una **línea** se parte en N trozos iguales, con un vértice en cada corte listo para enganchar.
 - Un **arco o círculo** se mide a lo largo de su cadena y queda en **N arcos independientes**, cada uno seleccionable por su cuenta: un círculo dividido en cuatro son cuatro cuartos.
@@ -68,7 +68,7 @@ Para que una superficie hecha de varias caras se vea continua sin borrar nada:
 ## Grupos y componentes
 
 - **Crear grupo** (`Ctrl+G`): la selección se vuelve un grupo — geometría aislada que no se «pega» al resto. **Doble clic** para entrar a editarlo; `Esc` o clic afuera para salir. Mientras editas, el resto del modelo se **atenúa** (Cámara ▸ Resto del modelo al editar).
-- **Deshacer grupo** (`Ctrl+Mayús+G`) lo disuelve. **Unir grupos** funde varios en uno.
+- **Explotar** (`Ctrl+Mayús+G`) lo disuelve un nivel. **Unir grupos** funde varios en uno.
 - **Crear componente…** (`G`): la selección se vuelve una **definición** con nombre y una primera instancia. Copiarla (`Ctrl+C`/`Ctrl+V`, o Mover con `Ctrl`) crea instancias que **comparten la definición**: editas una y cambian todas ([detalle](organizacion.md#componentes-editas-uno-cambian-todos)). Mover una instancia no duplica geometría.
 - **Hacer único** (clic derecho) desliga una copia para editarla sola.
 - Copiar y pegar funciona entre documentos; el pegado muestra una **vista previa sólida** siguiendo al cursor, con colores y texturas, y estampa una sola vez.

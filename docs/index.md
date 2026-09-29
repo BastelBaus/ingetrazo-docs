@@ -53,7 +53,7 @@ Bienvenido al manual de usuario de **IngeTrazo**, el modelador 3D libre para ing
 
     ---
 
-    Abre tus `.skp` de SketchUp (todas las versiones, sin conversores), DXF y DWG; exporta `.skp`, IFC, STL, OBJ, glTF y DXF.
+    Abre tus `.skp` (todas las versiones, sin conversores), DXF y DWG; exporta IFC, STL, OBJ, glTF y DXF.
 
     [:octicons-arrow-right-24: Intercambiar](importar-exportar.md)
 

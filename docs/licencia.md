@@ -15,7 +15,6 @@ Los modelos, láminas y exportes que produces con IngeTrazo son **tuyos** — la
 
 - Interfaz construida con **Qt (PySide6)**.
 - Importador `.skp` basado en **[OpenSKP](https://github.com/iamahsanmehmood/openskp)** (MIT), proyecto de código abierto al que IngeTrazo contribuye activamente.
-- El conversor opcional `skp2dae` es un programa separado (MIT) que usa la librería oficial de SketchUp — por eso se descarga aparte y no viaja dentro de IngeTrazo.
 - Mapa base: teselas de los proveedores que elijas (Esri, OpenStreetMap…), con sus propios términos; el DEM proviene de fuentes abiertas (AWS Terrain).
 
 ## Autor

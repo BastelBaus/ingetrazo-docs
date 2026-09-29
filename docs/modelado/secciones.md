@@ -1,6 +1,6 @@
 # Planos de sección
 
-Un **plano de sección** corta el modelo para mirar adentro — la planta de una casa a la altura de las ventanas, el corte por el eje de una pileta, el acero dentro de una columna. Funciona como en SketchUp: colocas el plano, el modelo se recorta en vivo, y las láminas dibujan el corte con su relleno.
+Un **plano de sección** corta el modelo para mirar adentro — la planta de una casa a la altura de las ventanas, el corte por el eje de una pileta, el acero dentro de una columna. Funciona así: colocas el plano, el modelo se recorta en vivo, y las láminas dibujan el corte con su relleno.
 
 ## Colocar un plano
 

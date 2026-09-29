@@ -33,7 +33,7 @@ Polígono, Mano alzada, Porción y Texto 3D no tienen tecla: están en el menú 
 | `E` | Borrador (`Mayús` = ocultar la arista) |
 | `B` | Pintar (`Alt` = gotero) |
 | `G` | Crear componente… |
-| `Ctrl+G` / `Ctrl+Mayús+G` | Crear grupo / Deshacer grupo |
+| `Ctrl+G` / `Ctrl+Mayús+G` | Crear grupo / Explotar |
 
 Voltear y Plano de sección están en el menú Herramientas.
 

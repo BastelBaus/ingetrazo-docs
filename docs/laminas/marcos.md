@@ -23,7 +23,7 @@ Con la herramienta **Marco** dibuja el rectángulo sobre la hoja (dos clics o ar
 | Estilo | Qué muestra |
 |---|---|
 | **Estilo del modelo** | El modelo tal como se ve en el visor: materiales, texturas, sombreado, sombras. |
-| **Estilos guardados** | Cualquier estilo de la biblioteca (Línea oculta, Arquitectónico, Rayos X, los tuyos…), por marco, como los viewports de LayOut. **Un marco nuevo nace en Arquitectónico**: fondo blanco, aristas y perfiles. |
+| **Estilos guardados** | Cualquier estilo de la biblioteca (Línea oculta, Arquitectónico, Rayos X, los tuyos…), por marco. **Un marco nuevo nace en Arquitectónico**: fondo blanco, aristas y perfiles. |
 | **Vectorial (líneas ocultas eliminadas)** | El dibujo que entintaría un dibujante: las **líneas ocultas se eliminan con cálculo exacto**, en vectores reales para el PDF y el DXF. |
 
 Bajo el estilo, la casilla **Fondo del papel** renderiza sobre blanco y sin cielo ni suelo sea cual sea el fondo del estilo: un marco en **Rayos X** (para enseñar el acero) o en Predeterminado ya no trae el gris del modelo a la lámina.
@@ -35,7 +35,7 @@ El estilo Vectorial clasifica cada trazo y lo dibuja con su pluma, como un plano
 | Clase | Pluma por defecto | Qué es |
 |---|---|---|
 | **Corte de sección** | 0,50 mm | Donde el plano de sección atraviesa un sólido. |
-| **Perfiles** | 0,35 mm | Siluetas y contornos contra el fondo — los *Profiles* de SketchUp. |
+| **Perfiles** | 0,35 mm | Siluetas y contornos contra el fondo (el grosor de perfil habitual). |
 | **Aristas** | 0,18 mm | Las demás aristas, entre dos caras visibles. |
 
 Donde la sección corta un **sólido cerrado**, el marco rellena el corte (el *poché*): **sólido** o **achurado a 45°**, con color y paso de achurado a tu gusto; una superficie abierta queda en blanco. Las plumas y el relleno se ajustan en la sección **Plumas del vectorial** del panel, que solo aparece con este estilo. La exportación DXF reparte las clases en capas `VISTA`, `VISTA-PERFIL` y `VISTA-CORTE` para la tabla de plumas de tu CAD.
@@ -44,7 +44,7 @@ Donde la sección corta un **sólido cerrado**, el marco rellena el corte (el *p
 
 Marca **Rótulo de vista** en el panel del marco y elige el estilo:
 
-- **Numerado, con línea debajo** (LayOut): burbuja con el **número** de la vista arriba y la **lámina** abajo, título en negrita, «ESC. 1:N» y una línea de base hasta el borde del marco. Con subtítulo opcional («N.P.T. +0.15»).
+- **Numerado, con línea debajo**: burbuja con el **número** de la vista arriba y la **lámina** abajo, título en negrita, «ESC. 1:N» y una línea de base hasta el borde del marco. Con subtítulo opcional («N.P.T. +0.15»).
 - **Barra vertical**: una franja a la izquierda del marco con título, subtítulo y escala girados 90°, y la burbuja al pie — el hábito de los planos brasileños.
 - **Línea simple**: la línea centrada de siempre.
 

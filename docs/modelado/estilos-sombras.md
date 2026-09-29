@@ -4,7 +4,7 @@ Cómo se ve el modelo es una decisión tuya, por documento y por escena: los **e
 
 ## Estilos
 
-**Cámara ▸ Estilo** cambia el estilo activo del documento. Los integrados, los mismos que SketchUp:
+**Cámara ▸ Estilo** cambia el estilo activo del documento. Los integrados:
 
 | Estilo | Qué muestra |
 |---|---|
@@ -25,7 +25,7 @@ El desplegable **Estilos** de la barra de herramientas abre el editor, que edita
 - Modo de cara (sombreado, línea oculta, monocromo, alámbrico, rayos X), aristas, perfiles, cielo y **relleno de sección**.
 - Los cuatro colores: frente y dorso de las caras, **cielo** y **suelo** — con un degradado hacia el horizonte. Un color que no se ve en el modo actual sigue siendo editable; la barra de estado dice dónde se verá.
 - **Guardar estilo…** lo añade a **tu biblioteca** con nombre (un nombre integrado se rechaza: los presets son fijos). **Eliminar** lo quita.
-- Los estilos guardados aparecen en Cámara ▸ Estilo y en el combo de estilo de cada **marco del compositor** — como los estilos de LayOut, cada marco puede llevar el suyo.
+- Los estilos guardados aparecen en Cámara ▸ Estilo y en el combo de estilo de cada **marco del compositor** — cada marco puede llevar el suyo.
 - Cada **escena** recuerda su estilo, y el `.igz` guarda el estilo completo: un documento no depende de tu biblioteca.
 
 ## Sombras con el sol de verdad
@@ -35,7 +35,7 @@ El desplegable **Sombras** de la barra de herramientas (y **Cámara ▸ Sombras*
 - **Fecha**: día y mes, con un deslizador del año. **Hora**, acotada al día — de amanecer a atardecer del sitio y la fecha, para que el sol nunca esté bajo el horizonte.
 - **Oscuridad** de las sombras y **zona horaria** (se deduce de la longitud; puedes fijarla).
 - **Sitio**: el datum del proyecto si está [georreferenciado](../terreno/ubicacion.md); si no, Arequipa. **Añadir localización…** abre el localizador y fija el datum.
-- Como en SketchUp, el **vidrio con opacidad menor a 70 % no proyecta sombra**; las texturas caladas (mallas, hojas) proyectan su trama; las figuras «cara a la cámara» proyectan su silueta orientada al sol.
+- El **vidrio con opacidad menor a 70 % no proyecta sombra**; las texturas caladas (mallas, hojas) proyectan su trama; las figuras «cara a la cámara» proyectan su silueta orientada al sol.
 - El sol también **sombrea las caras** (las que le dan la espalda se ven más oscuras) y el suelo recibe la sombra como una veladura.
 - Los ajustes de sombra se guardan en el documento y **los marcos del compositor renderizan con ellas**: una lámina de asoleamiento sale directa.
 
@@ -47,7 +47,7 @@ El desplegable **Sombras** de la barra de herramientas (y **Cámara ▸ Sombras*
 - **Ventana ▸ Pantalla limpia** (`Ctrl+0`) oculta barras y paneles y deja solo el viewport; otra vez `Ctrl+0` los devuelve.
 - **La disposición se recuerda**: dónde dejaste las barras de herramientas, qué paneles de la bandeja abriste y su tamaño vuelven en la próxima sesión.
 - Los paneles **Estilos**, **Sombras** y **Estilo de cota** son desplegables de la barra de herramientas, no ocupan la bandeja derecha.
-- **Cámara ▸ Resto del modelo al editar**: al entrar a un grupo, lo demás se muestra normal, **atenuado** (como SketchUp, el valor por defecto) u **oculto** (el modo más rápido en modelos pesados). También en Preferencias.
+- **Cámara ▸ Resto del modelo al editar**: al entrar a un grupo, lo demás se muestra normal, **atenuado** (el valor por defecto) u **oculto** (el modo más rápido en modelos pesados). También en Preferencias.
 
 ## Exportar una imagen
 

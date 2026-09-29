@@ -1,6 +1,6 @@
 # Composición de láminas
 
-El **compositor de láminas** convierte tu modelo en planos impresos sin salir de IngeTrazo — al estilo del compositor de QGIS o de LayOut: colocas **vistas del modelo a escala exacta** sobre una hoja, las acotas, les pones cajetín, y exportas PDF vectorial.
+El **compositor de láminas** convierte tu modelo en planos impresos sin salir de IngeTrazo — al estilo del compositor de QGIS: colocas **vistas del modelo a escala exacta** sobre una hoja, las acotas, les pones cajetín, y exportas PDF vectorial.
 
 Se abre desde las **pestañas de la barra de estado** (Modelo | Lámina 1 | … | `+`) — un clic en una lámina la abre; `+` crea una nueva; **Modelo** vuelve al modelador — o desde **Archivo ▸ Compositor de láminas…**.
 

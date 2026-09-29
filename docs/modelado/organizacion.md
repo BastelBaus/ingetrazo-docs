@@ -6,11 +6,11 @@ El panel **Capas** de la bandeja organiza la visibilidad del modelo (la lista cr
 
 - **+ Capa** crea una; el selector de cada entidad (o el panel Info de entidad) la asigna.
 - El **ojo** muestra/oculta todo lo que vive en la capa — muebles, referencias, instalaciones.
-- Al importar un `.skp`, las capas/etiquetas de SketchUp llegan con su visibilidad original.
+- Al importar un `.skp`, sus capas/etiquetas llegan con su visibilidad original.
 - Eliminar una capa no borra su geometría: pasa a la capa por defecto.
 
 !!! note "Capas = visibilidad, no aislamiento"
-    Como en SketchUp, las capas controlan qué se ve; la geometría en capas distintas **sí se toca** si comparte espacio. Para aislar geometría usa **grupos**.
+    Las capas controlan qué se ve; la geometría en capas distintas **sí se toca** si comparte espacio. Para aislar geometría usa **grupos**.
 
 ## Escenas
 
@@ -38,11 +38,11 @@ Además de la cámara y las capas, cada escena guarda el **estilo** activo, el *
 
 ## Componentes: editas uno, cambian todos
 
-Las copias de un componente (Ctrl+C / Ctrl+V, o Mover con Ctrl) comparten una misma definición. Como en SketchUp:
+Las copias de un componente (Ctrl+C / Ctrl+V, o Mover con Ctrl) comparten una misma definición:
 
 - **Doble clic en cualquier copia** la abre para editar. Dibuja, empuja, borra dentro; al salir (Esc o clic afuera), el cambio pasa a **todas** las copias. Toda la edición se deshace en un solo paso de Ctrl+Z.
 - **Empujar/Tirar sobre una copia desde fuera** también edita la definición: las demás copias reciben el mismo empuje.
 - **Para cambiar una sola copia**, antes de editarla usa clic derecho ▸ **Hacer único**: esa copia se desliga y las demás siguen compartiendo la definición.
 - Mirar dentro de un componente y salir sin tocar nada no cambia nada.
-- **Crear componente…** (`G`) convierte la selección en una definición con nombre; **Unir grupos** funde varios grupos en uno; **Deshacer grupo** (`Ctrl+Mayús+G`) disuelve.
-- Los componentes importados de `.skp` con **subgrupos** conservan su jerarquía: se mueven y copian como un solo objeto y su archivo no engorda. Editar dentro de uno de esos lo desarma en ese documento (como al editar un componente anidado en SketchUp).
+- **Crear componente…** (`G`) convierte la selección en una definición con nombre; **Unir grupos** funde varios grupos en uno; **Explotar** (`Ctrl+Mayús+G`) disuelve un nivel.
+- Los componentes importados de `.skp` con **subgrupos** conservan su jerarquía: se mueven y copian como un solo objeto y su archivo no engorda. Editar dentro de uno de esos lo desarma en ese documento (lo habitual al editar un componente anidado).
