@@ -2,7 +2,13 @@
 
 <!-- Barra superior con enlace de regreso al sitio principal -->
 {% block announce %}
+  {% if config.theme.language == "ko" %}
+  <a href="https://ingetrazo.com" class="ingep-back" title="IngeTrazo 메인 사이트로 이동">
+    ← <strong>IngeTrazo.com</strong>(으)로 돌아가기
+  </a>
+  {% else %}
   <a href="https://ingetrazo.com" class="ingep-back" title="Ir al sitio principal de IngeTrazo">
     ← Volver a <strong>IngeTrazo.com</strong>
   </a>
+  {% endif %}
 {% endblock %}

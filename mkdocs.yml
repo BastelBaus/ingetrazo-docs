@@ -29,7 +29,8 @@ theme:
         icon: material/weather-sunny
         name: Cambiar a modo claro
   features:
-    - navigation.instant
+    # Sin navigation.instant: con él, el selector de idioma no puede llevar
+    # a la misma página en el otro idioma (aviso de mkdocs-static-i18n).
     - navigation.tracking
     - navigation.sections
     - navigation.top
@@ -38,6 +39,80 @@ theme:
     - search.suggest
     - search.highlight
     - content.code.copy
+
+plugins:
+  - search
+  # Manual bilingüe: una carpeta por idioma con las mismas rutas
+  # (`docs/es/bim.md` ↔ `docs/ko/bim.md`). Imágenes, logo y CSS quedan en la
+  # raíz de `docs/` y los comparten todos los idiomas. El selector de idioma
+  # de Material lo configura el plugin; si falta una página en `ko/`, se
+  # muestra la española. Las rutas del `nav` son relativas a la carpeta del
+  # idioma.
+  - i18n:
+      docs_structure: folder
+      fallback_to_default: true
+      reconfigure_material: true
+      reconfigure_search: true
+      languages:
+        - locale: es
+          default: true
+          name: Español
+          build: true
+        - locale: ko
+          name: 한국어
+          build: true
+          site_name: IngeTrazo 사용 설명서
+          site_description: IngeTrazo 사용 설명서 — 엔지니어링과 건축을 위한 무료 3D 모델러.
+          theme:
+            palette:
+              - media: "(prefers-color-scheme: light)"
+                scheme: default
+                primary: custom
+                accent: custom
+                toggle:
+                  icon: material/weather-night
+                  name: 다크 모드로 전환
+              - media: "(prefers-color-scheme: dark)"
+                scheme: slate
+                primary: custom
+                accent: custom
+                toggle:
+                  icon: material/weather-sunny
+                  name: 라이트 모드로 전환
+          nav_translations:
+            Inicio: 홈
+            Primeros pasos: 시작하기
+            Instalación: 설치
+            La interfaz: 인터페이스
+            Tu primer modelo: 첫 모델 만들기
+            Ejemplos para abrir: 열어 볼 예제
+            Modelado: 모델링
+            Herramientas de dibujo: 그리기 도구
+            Editar la geometría: 형상 편집
+            Materiales, texturas y componentes: 재질, 텍스처, 컴포넌트
+            Capas, escenas y organización: 레이어, 장면, 정리
+            Planos de sección: 단면 평면
+            Estilos, sombras y pantalla: 스타일, 그림자, 화면
+            Imágenes de referencia: 참조 이미지
+            Cotas y anotación 3D: 치수와 3D 주석
+            Modelar con la IA: AI로 모델링하기
+            BIM y metrados: BIM과 물량 산출
+            Importar y exportar: 가져오기와 내보내기
+            Terreno: 지형
+            Ubicación del proyecto y mapa base: 프로젝트 위치와 배경 지도
+            Terreno 3D: 3D 지형
+            Levantamiento de dron (WebODM): 드론 측량 (WebODM)
+            Rutas, perfil y puntos topográficos: 경로, 단면, 측량점
+            Composición de láminas: 시트 구성
+            Conceptos y hojas: 개념과 시트
+            Marcos de vista y escala: 뷰 프레임과 축척
+            Cotas, textos, formas y cajetín: 치수, 텍스트, 도형, 표제란
+            Exportar PDF y DXF: PDF와 DXF 내보내기
+            Extensiones: 확장 기능
+            Preferencias: 환경 설정
+            Atajos de teclado: 단축키
+            Preguntas frecuentes: 자주 묻는 질문
+            Licencia: 라이선스
 
 extra_css:
   - stylesheets/marca.css
