@@ -1,9 +1,11 @@
-# Manual de IngeTrazo (docs)
+# IngeTrazo Manual (docs)
 
-Sitio de documentación de usuario, hecho con [MkDocs Material](https://squidfunk.github.io/mkdocs-material/).
-Hermano de `ingepresupuestos-docs` (docs.ingepresupuestos.com): mismo stack y convenciones.
+[Español](README.es.md) · **English**
 
-## Desarrollo local
+User documentation site, built with [MkDocs Material](https://squidfunk.github.io/mkdocs-material/).
+Sibling of `ingepresupuestos-docs` (docs.ingepresupuestos.com): same stack and conventions.
+
+## Local development
 
 ```bash
 python3 -m venv venv
@@ -11,39 +13,39 @@ venv/bin/pip install -r requirements.txt
 venv/bin/mkdocs serve        # http://127.0.0.1:8000
 ```
 
-Editar el contenido en `docs/es/` (Markdown, el original). Las traducciones
-viven en una carpeta por idioma con las mismas rutas —coreano en `docs/ko/`,
-inglés en `docs/en/`—; una página que falte ahí se muestra en español.
-Imágenes, logo y CSS van en la raíz de `docs/` y los comparten todos los
-idiomas. La navegación se define en `mkdocs.yml` (rutas relativas a la carpeta
-del idioma; los títulos traducidos, en el `nav_translations` de cada idioma).
+Edit the content in `docs/es/` (Markdown, the original). Translations live
+in one folder per language with the same paths —Korean in `docs/ko/`,
+English in `docs/en/`—; a page missing there is shown in Spanish.
+Images, logo and CSS go in the root of `docs/` and are shared by all
+languages. Navigation is defined in `mkdocs.yml` (paths relative to the
+language folder; translated titles in each language's `nav_translations`).
 
-### Traducciones al día
+### Keeping translations up to date
 
-Cada página traducida (`docs/ko/`, `docs/en/`) lleva en su cabecera `source_blob:`, el blob de git
-del original que tradujo. Tras cambiar el español:
+Every translated page (`docs/ko/`, `docs/en/`) carries `source_blob:` in its front matter, the git blob
+of the original it was translated from. After changing the Spanish:
 
 ```bash
-python3 scripts/check_translations.py          # qué páginas quedaron desactualizadas, sin traducir o sin original
-python3 scripts/check_translations.py --diff   # y qué cambió en cada original
-python3 scripts/check_translations.py --mark docs/ko/bim.md   # tras actualizar la traducción
+python3 scripts/check_translations.py          # which pages are outdated, untranslated or orphaned
+python3 scripts/check_translations.py --diff   # plus what changed in each original
+python3 scripts/check_translations.py --mark docs/ko/bim.md   # after updating the translation
 ```
 
-Sale con código 1 si hay algo pendiente (sirve en CI). Una página
-desactualizada se sigue publicando con su traducción vieja hasta que se
-actualice.
+It exits with code 1 if anything is pending (usable in CI). An outdated
+page keeps being published with its old translation until it is
+updated.
 
-## Publicar (Cloudflare Pages, subida directa)
+## Publishing (Cloudflare Pages, direct upload)
 
-El proyecto `ingetrazo-docs` de Cloudflare Pages **NO está conectado a
-GitHub**: un `git push` no construye nada (comprobado el 2026-09-07). Se
-construye aquí y se sube la carpeta `site/` con wrangler:
+The `ingetrazo-docs` project on Cloudflare Pages is **NOT connected to
+GitHub**: a `git push` builds nothing (checked on 2026-09-07). It is
+built here and the `site/` folder is uploaded with wrangler:
 
 ```bash
 venv/bin/mkdocs build
 npx wrangler pages deploy site --project-name ingetrazo-docs --branch main
-git push   # el repo es solo el historial del fuente
+git push   # the repo is only the history of the source
 ```
 
-- **Output directory:** `site` (ignorada por git)
-- **URL:** https://ingetrazo-docs.pages.dev · **Dominio previsto:** docs.ingetrazo.com
+- **Output directory:** `site` (ignored by git)
+- **URL:** https://ingetrazo-docs.pages.dev · **Planned domain:** docs.ingetrazo.com
