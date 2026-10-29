@@ -11,16 +11,16 @@ venv/bin/pip install -r requirements.txt
 venv/bin/mkdocs serve        # http://127.0.0.1:8000
 ```
 
-Editar el contenido en `docs/es/` (Markdown, el original). La traducción al
-coreano vive en `docs/ko/` con las mismas rutas; una página que falte ahí se
-muestra en español. Imágenes, logo y CSS van en la raíz de `docs/` y los
-comparten los dos idiomas. La navegación se define en `mkdocs.yml` (rutas
-relativas a la carpeta del idioma; los títulos en coreano, en
-`nav_translations`).
+Editar el contenido en `docs/es/` (Markdown, el original). Las traducciones
+viven en una carpeta por idioma con las mismas rutas —coreano en `docs/ko/`,
+inglés en `docs/en/`—; una página que falte ahí se muestra en español.
+Imágenes, logo y CSS van en la raíz de `docs/` y los comparten todos los
+idiomas. La navegación se define en `mkdocs.yml` (rutas relativas a la carpeta
+del idioma; los títulos traducidos, en el `nav_translations` de cada idioma).
 
 ### Traducciones al día
 
-Cada página de `docs/ko/` lleva en su cabecera `source_blob:`, el blob de git
+Cada página traducida (`docs/ko/`, `docs/en/`) lleva en su cabecera `source_blob:`, el blob de git
 del original que tradujo. Tras cambiar el español:
 
 ```bash

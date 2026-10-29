@@ -113,6 +113,61 @@ plugins:
             Atajos de teclado: 단축키
             Preguntas frecuentes: 자주 묻는 질문
             Licencia: 라이선스
+        - locale: en
+          name: English
+          build: true
+          site_name: IngeTrazo Manual
+          site_description: IngeTrazo user manual — free 3D modeler for engineering and architecture.
+          theme:
+            palette:
+              - media: "(prefers-color-scheme: light)"
+                scheme: default
+                primary: custom
+                accent: custom
+                toggle:
+                  icon: material/weather-night
+                  name: Switch to dark mode
+              - media: "(prefers-color-scheme: dark)"
+                scheme: slate
+                primary: custom
+                accent: custom
+                toggle:
+                  icon: material/weather-sunny
+                  name: Switch to light mode
+          nav_translations:
+            Inicio: Home
+            Primeros pasos: Getting started
+            Instalación: Installation
+            La interfaz: The interface
+            Tu primer modelo: Your first model
+            Ejemplos para abrir: Examples to open
+            Modelado: Modeling
+            Herramientas de dibujo: Drawing tools
+            Editar la geometría: Editing the geometry
+            Materiales, texturas y componentes: Materials, textures and components
+            Capas, escenas y organización: Layers, scenes and organization
+            Planos de sección: Section planes
+            Estilos, sombras y pantalla: Styles, shadows and display
+            Imágenes de referencia: Reference images
+            Cotas y anotación 3D: Dimensions and 3D annotation
+            Modelar con la IA: Modeling with AI
+            BIM y metrados: BIM and quantity takeoff
+            Importar y exportar: Import and export
+            Terreno: Terrain
+            Ubicación del proyecto y mapa base: Project location and base map
+            Terreno 3D: 3D terrain
+            Levantamiento de dron (WebODM): Drone survey (WebODM)
+            Rutas, perfil y puntos topográficos: Routes, profile and survey points
+            Composición de láminas: Sheet layout
+            Conceptos y hojas: Concepts and sheets
+            Marcos de vista y escala: View frames and scale
+            Cotas, textos, formas y cajetín: Dimensions, texts, shapes and title block
+            Exportar PDF y DXF: Export PDF and DXF
+            Extensiones: Extensions
+            Preferencias: Preferences
+            Atajos de teclado: Keyboard shortcuts
+            Preguntas frecuentes: Frequently asked questions
+            Licencia: License
 
 extra_css:
   - stylesheets/marca.css
