@@ -27,10 +27,20 @@ El mismo panel muestra las **cantidades al instante**, por clase:
 
 Los números salen del sólido real — y como el motor garantiza sólidos herméticos, el metrado es confiable por construcción.
 
+## Buscar, filtrar y agrupar
+
+Con muchos objetos, la barra encima de la tabla ayuda a encontrar lo que buscas:
+
+- **Buscador**: escribe parte del nombre o de la clase (`*` y `?` funcionan, como en el Navegador).
+- **Embudo**: desmarca las clases IFC que no quieres ver — por ejemplo, deja solo los IfcSpace. El embudo se rellena mientras oculta algo.
+- **Agrupar**: *por grupo* (cada objeto dentro de los grupos que lo contienen), *por clase IFC* (cada clase con su número de objetos y los totales de metrado y volumen de las filas visibles) o *sin agrupar*.
+
+El agrupamiento y las clases ocultas se recuerdan entre sesiones.
+
 ## Exportar
 
 - **IFC 4**: Archivo ▸ Exportar ▸ IFC. El archivo pasa la validación estándar (`ifcopenshell.validate`) y lo abre cualquier visor o software BIM. Incluye las cantidades (`Qto_*BaseQuantities`).
-- **CSV de cantidades**: tu tabla de metrados lista para la hoja de cálculo.
+- **CSV de cantidades**: tu tabla de metrados lista para la hoja de cálculo. **Exportar todo a CSV** escribe todos los objetos; **Exportar lo mostrado a CSV**, solo los que dejan el buscador y el embudo.
 
 ## El puente a IngePresupuestos
 

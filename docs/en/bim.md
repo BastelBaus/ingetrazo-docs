@@ -1,5 +1,5 @@
 ---
-source_blob: 2e8095d9d437fb2aea3eabb994f398aa7d9d4c9c
+source_blob: 85e41ee66029a2246e8d054909442c816c92fa0f
 ---
 
 # BIM and quantity takeoff
@@ -31,10 +31,20 @@ The same panel shows the **quantities instantly**, by class:
 
 The numbers come from the real solid — and since the engine guarantees watertight solids, the takeoff is reliable by construction.
 
+## Search, filter and group
+
+With many objects, the bar above the table helps you find what you are after:
+
+- **Search**: type part of the name or the class (`*` and `?` work, as in the Browser).
+- **Funnel**: untick the IFC classes you don't want to see — for example, keep only the IfcSpace objects. The funnel fills while it hides something.
+- **Group**: *by group* (each object inside the groups that hold it), *by IFC class* (each class with its object count and the takeoff and volume totals of the visible rows) or *no grouping*.
+
+The grouping and the hidden classes are remembered between sessions.
+
 ## Exporting
 
 - **IFC 4**: File ▸ Export ▸ IFC. The file passes standard validation (`ifcopenshell.validate`) and any BIM viewer or software opens it. It includes the quantities (`Qto_*BaseQuantities`).
-- **Quantities CSV**: your takeoff table ready for the spreadsheet.
+- **Quantities CSV**: your takeoff table ready for the spreadsheet. **Export all CSV** writes every object; **Export shown CSV** only those the search and the funnel leave.
 
 ## The bridge to IngePresupuestos
 
