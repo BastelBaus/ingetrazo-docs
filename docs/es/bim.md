@@ -31,11 +31,12 @@ Los números salen del sólido real — y como el motor garantiza sólidos herm�
 
 Con muchos objetos, la barra encima de la tabla ayuda a encontrar lo que buscas:
 
-- **Buscador**: escribe parte del nombre o de la clase (`*` y `?` funcionan, como en el Navegador).
+- **Buscador**: escribe parte del nombre, de la clase o de la ruta en el esquema (`*` y `?` funcionan, como en el Navegador).
 - **Embudo**: desmarca las clases IFC que no quieres ver — por ejemplo, deja solo los IfcSpace. El embudo se rellena mientras oculta algo.
-- **Agrupar**: *por grupo* (cada objeto dentro de los grupos que lo contienen), *por clase IFC* (cada clase con su número de objetos y los totales de metrado y volumen de las filas visibles) o *sin agrupar*.
+- **Agrupar**: *por grupo* (cada objeto dentro de los grupos que lo contienen), *por clase IFC* o *por nombre* (cada encabezado con su número de objetos y los totales de metrado y volumen de las filas visibles) o *sin agrupar*.
+- **Columnas**: la columna **Ruta en el esquema** dice en qué grupos está cada objeto, por ejemplo «Planta 1/Núcleo». El botón al final del encabezado (o el clic derecho sobre él) muestra u oculta Metrado, Vol m³ y Ruta en el esquema, como en el Navegador.
 
-El agrupamiento y las clases ocultas se recuerdan entre sesiones.
+El agrupamiento, las clases ocultas y las columnas se recuerdan entre sesiones.
 
 ## Exportar
 

@@ -1,5 +1,5 @@
 ---
-source_blob: 85e41ee66029a2246e8d054909442c816c92fa0f
+source_blob: 8ff4d5465b33b8c5a924cd0535e8dae931fac3cd
 ---
 
 # BIM and quantity takeoff
@@ -35,11 +35,12 @@ The numbers come from the real solid — and since the engine guarantees waterti
 
 With many objects, the bar above the table helps you find what you are after:
 
-- **Search**: type part of the name or the class (`*` and `?` work, as in the Browser).
+- **Search**: type part of the name, the class or the outline path (`*` and `?` work, as in the Browser).
 - **Funnel**: untick the IFC classes you don't want to see — for example, keep only the IfcSpace objects. The funnel fills while it hides something.
-- **Group**: *by group* (each object inside the groups that hold it), *by IFC class* (each class with its object count and the takeoff and volume totals of the visible rows) or *no grouping*.
+- **Group**: *by group* (each object inside the groups that hold it), *by IFC class* or *by name* (each heading with its object count and the takeoff and volume totals of the visible rows) or *no grouping*.
+- **Columns**: the **Outline path** column says which groups each object sits in, for example "Floor 1/Core". The button at the header's right end (or a right-click on the header) shows or hides Takeoff, Vol m³ and Outline path, as in the Browser.
 
-The grouping and the hidden classes are remembered between sessions.
+The grouping, the hidden classes and the columns are remembered between sessions.
 
 ## Exporting
 
