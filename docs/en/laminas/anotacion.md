@@ -110,9 +110,28 @@ The **ground line** is the ground of an elevation: the line and, below it, what 
 
 ## Text and images
 
-- **Text**: blocks with font, size in points, **bold, italic and underline**, color, background and alignment. **Double-click** edits it **in place**, with the same font at the same size; clicking outside or `Ctrl+Enter` confirms, `Esc` cancels. A text can be **linked to a frame** ("moves with its frame") and use fields: `{escala}` reads that frame's scale, `{lamina}` and `{proyecto}` the title block, `{fecha}` the date. **Add a scale label** in the frame's panel places such a text, already written.
+- **Text**: blocks with font, size in points, **bold, italic and underline**, color, background and alignment. **Double-click** edits it **in place**, with the same font at the same size; clicking outside or `Ctrl+Enter` confirms, `Esc` cancels. A text can be **linked to a frame** ("moves with its frame") and use fields: `{escala}` reads that frame's scale, `{lamina}` and `{proyecto}` the title block, `{fecha}` the date (the full list is under [Dynamic fields](#dynamic-fields)). **Add a scale label** in the frame's panel places such a text, already written.
 - **Image**: logos, site photos, auxiliary views (PNG/JPG). With **opacity**, **clip shape** (rectangle, rounded corners, ellipse or circle), **feathered edge** in millimeters, **fit** (stretch, cover by cropping or contain whole) and optional outline — a circular photo blended into the paper, as on presentation sheets.
 - **Terrain profile**: the **Profile** tool draws the longitudinal profile of an [alignment](../terreno/rutas-perfil.md) on the sheet, with horizontal and vertical scale, vertical exaggeration, chainages and elevations; sampled from the drone survey or the DEM, and it updates if the alignment changes.
+
+## Dynamic fields
+
+A word between braces is replaced by its live value, on screen as well as in print and PDF. Fields work in texts, in the title block's values, in a view's title, subtitle, number and sheet, and in a callout's number and sheet. Each field has a Spanish, an English and a German name; all three work, in upper or lower case: `{fecha}`, `{date}` and `{Datum}` are the same field.
+
+| Field | Also | Shows |
+|---|---|---|
+| `{proyecto}` | `{project}`, `{projekt}` | The PROYECTO row of the title block |
+| `{autor}` | `{author}`, `{verfasser}` | The AUTOR row of the title block |
+| `{lamina}` | `{sheet}`, `{plannr}` | The LÁMINA row of the title block; if empty, the sheet's name |
+| `{nombre}` | `{name}`, `{planname}`, `{sheet_name}` | The sheet's name, as in the sheet list |
+| `{escala}` | `{scale}`, `{massstab}` | The scale of the frame the text is linked to, otherwise of the largest frame: `1:50`, `10:1` |
+| `{escena}` | `{scene}`, `{szene}` | The name of the scene that frame shows |
+| `{fecha}` | `{date}`, `{datum}` | Today's date, as `dd/mm/yyyy` |
+| `{archivo}` | `{file}`, `{datei}` | The project file's name, without folder or extension |
+| `{hoja}` | `{page}`, `{blatt}` | This sheet's number in the project (1, 2, 3…) |
+| `{total}` | `{gesamt}` | How many sheets the project has |
+
+For example, `Sheet {hoja} of {total} · {fecha}` prints "Sheet 3 of 5 · 03/11/2026". Don't mix up `{sheet}` and `{sheet_name}`: `{sheet}` is the drawing number from the title block ("A-101"), `{sheet_name}` is always the sheet's own name ("Ground floor"). The title-block rows are found by their label, in Spanish, English or German, with or without the accent (`LÁMINA`, `Lamina`, `Sheet`). `{fecha}` is the day the sheet is drawn or printed, not a stored date: to freeze a date, type it. A name the program doesn't know, such as a typo like `{fehca}`, stays as typed, so you can spot it on the sheet.
 
 ## Title block
 
