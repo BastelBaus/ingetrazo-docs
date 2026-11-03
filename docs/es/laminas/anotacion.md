@@ -106,9 +106,28 @@ La **línea de terreno** es el suelo de una elevación: la línea y, por debajo,
 
 ## Texto e imágenes
 
-- **Texto**: bloques con fuente, tamaño en puntos, **negrita, cursiva y subrayado**, color, fondo y alineación. **Doble clic** lo edita **en su sitio**, con la misma letra al mismo tamaño; clic fuera o `Ctrl+Enter` confirma, `Esc` cancela. Un texto puede quedar **ligado a un marco** («se mueve con su marco») y usar campos: `{escala}` lee la escala de ese marco, `{lamina}` y `{proyecto}` el cajetín, `{fecha}` la fecha. **Añadir etiqueta de escala** en el panel del marco pone un texto así, ya escrito.
+- **Texto**: bloques con fuente, tamaño en puntos, **negrita, cursiva y subrayado**, color, fondo y alineación. **Doble clic** lo edita **en su sitio**, con la misma letra al mismo tamaño; clic fuera o `Ctrl+Enter` confirma, `Esc` cancela. Un texto puede quedar **ligado a un marco** («se mueve con su marco») y usar campos: `{escala}` lee la escala de ese marco, `{lamina}` y `{proyecto}` el cajetín, `{fecha}` la fecha (la lista completa está en [Campos dinámicos](#campos-dinamicos)). **Añadir etiqueta de escala** en el panel del marco pone un texto así, ya escrito.
 - **Imagen**: logos, fotos de obra, vistas auxiliares (PNG/JPG). Con **opacidad**, **forma del recorte** (rectángulo, esquinas redondeadas, elipse o círculo), **borde desvanecido** en milímetros, **ajuste** (estirar, cubrir recortando o contener entera) y contorno opcional — una foto en círculo fundida al papel, como en las láminas de presentación.
 - **Perfil de terreno**: la herramienta **Perfil** dibuja el perfil longitudinal de un [trazado](../terreno/rutas-perfil.md) sobre la lámina, con escala horizontal y vertical, exageración vertical, progresivas y cotas; muestreado del levantamiento de dron o del DEM, y se actualiza si el trazado cambia.
+
+## Campos dinámicos {#campos-dinamicos}
+
+Una palabra entre llaves se reemplaza por su valor del momento, en pantalla y también al imprimir y en el PDF. Los campos sirven en los textos, en los valores del cajetín, en el título, subtítulo, número y lámina de una vista, y en el número y la lámina de una llamada de detalle. Cada campo tiene un nombre en español, otro en inglés y otro en alemán; los tres valen, en mayúsculas o minúsculas: `{fecha}`, `{date}` y `{Datum}` son el mismo campo.
+
+| Campo | También | Muestra |
+|---|---|---|
+| `{proyecto}` | `{project}`, `{projekt}` | La fila PROYECTO del cajetín |
+| `{autor}` | `{author}`, `{verfasser}` | La fila AUTOR del cajetín |
+| `{lamina}` | `{sheet}`, `{plannr}` | La fila LÁMINA del cajetín; si está vacía, el nombre de la lámina |
+| `{nombre}` | `{name}`, `{planname}`, `{sheet_name}` | El nombre de la lámina, como en la lista de láminas |
+| `{escala}` | `{scale}`, `{massstab}` | La escala del marco al que está ligado el texto; si no, la del marco más grande: `1:50`, `10:1` |
+| `{escena}` | `{scene}`, `{szene}` | El nombre de la escena que muestra ese marco |
+| `{fecha}` | `{date}`, `{datum}` | La fecha de hoy, como `dd/mm/aaaa` |
+| `{archivo}` | `{file}`, `{datei}` | El nombre del archivo del proyecto, sin carpeta ni extensión |
+| `{hoja}` | `{page}`, `{blatt}` | El número de esta lámina en el proyecto (1, 2, 3…) |
+| `{total}` | `{gesamt}` | Cuántas láminas tiene el proyecto |
+
+Por ejemplo, `Lámina {hoja} de {total} · {fecha}` imprime «Lámina 3 de 5 · 03/11/2026». No confundas `{lamina}` con `{nombre}`: `{lamina}` (`{sheet}`) es el número de plano del cajetín («A-101»), `{nombre}` (`{sheet_name}`) es siempre el nombre de la lámina («Planta baja»). Las filas del cajetín se buscan por su rótulo, en español, inglés o alemán, con o sin tilde (`LÁMINA`, `Lamina`, `Sheet`). `{fecha}` es el día en que se dibuja o imprime la lámina, no una fecha guardada: para fijar una fecha, escríbela. Un nombre que el programa no conoce, como una errata `{fehca}`, queda tal cual, así lo ves en la lámina.
 
 ## Cajetín
 
